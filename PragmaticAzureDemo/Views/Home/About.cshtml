@@ -1,0 +1,26 @@
+﻿@using PragmaticAzureActiveDirectory.ViewHelpers
+@{
+    ViewBag.Title = "About";
+}
+
+<h2>@ViewBag.Title.</h2>
+@*<h3>@ViewBag.Message</h3>*@
+
+<h4>Managed Thread Id: @System.Threading.Thread.CurrentThread.ManagedThreadId</h4>
+<h2>Claims inside Current Thread</h2>
+<h4><em>Claim Type</em> [<em>Claim Issuer</em>] &rarr; <em>Claim Value</em></h4>
+<ol>
+    @foreach (var claim in ((System.Security.Claims.ClaimsPrincipal)(System.Threading.Thread.CurrentPrincipal)).Claims)
+    {
+        <li>@Html.Raw(ClaimsRenderHelpers.RenderClaimTypeBold(claim.Type)) [@claim.Issuer] &rarr; <strong>@claim.Value</strong></li>
+    }
+</ol>
+
+<hr/>
+<h3>AAD Security Groups</h3>
+<ol>
+    <li>Edit with <a href="https://portal.microsoftonline.com/EAdmin/Group/SecurityGroups.aspx">Office 365 Portal</a></li>
+    <li>Edit with <a href="https://manage.windowsazure.com/pragmaticazure.com#Workspaces/ActiveDirectoryExtension/Directory/9f80b506-1bf8-41fe-a010-45beecec8016/groups">Azure Portal</a></li>
+    <li>(Could also edit with on-premises Active Directory)</li>
+</ol>
+
