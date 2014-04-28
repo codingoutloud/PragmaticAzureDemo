@@ -34,6 +34,9 @@ namespace PragmaticAzureDemo.Controllers
 
         public ActionResult About()
         {
+            var useremail = ClaimsPrincipal.Current.Identity.Name; 
+            PragmaticAzure.Telemetry.PragmaticAzureEventSource.Logger.AccessAboutPage(useremail);
+
             ViewBag.Message = "";
 
             return View();
@@ -42,6 +45,8 @@ namespace PragmaticAzureDemo.Controllers
         [Authorize(Roles="Sports Fan")]
         public ActionResult Contact()
         {
+            PragmaticAzure.Telemetry.PragmaticAzureEventSource.Logger.AccessContactPage();
+
             ViewBag.Message = "Full contact sports page!";
 
             return View();

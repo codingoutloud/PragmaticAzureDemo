@@ -9,6 +9,7 @@ using PragmaticAzureDemo.Controllers;
 
 namespace PragmaticAzureDemo.Tests.Controllers
 {
+#if false
     [TestClass]
     public class HomeControllerTest
     {
@@ -51,4 +52,5 @@ namespace PragmaticAzureDemo.Tests.Controllers
             Assert.IsNotNull(result);
         }
     }
+#endif
 }

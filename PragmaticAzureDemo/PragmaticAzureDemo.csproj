@@ -52,7 +52,7 @@
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -201,6 +201,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PragmaticAzure.Telemetry\PragmaticAzure.Telemetry.csproj">
+      <Project>{98b83d07-8488-43b9-8445-64361e5a2a38}</Project>
+      <Name>PragmaticAzure.Telemetry</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PragmaticAzureActiveDirectory\PragmaticAzureActiveDirectory.csproj">
       <Project>{81665a42-513f-4697-ac97-25c2eee785e2}</Project>
       <Name>PragmaticAzureActiveDirectory</Name>

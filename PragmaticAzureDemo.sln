@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PragmaticAzureDemo", "PragmaticAzureDemo\PragmaticAzureDemo.csproj", "{4FD5C0FA-6B84-4F08-8B95-49C053591BB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PragmaticAzureDemo.Tests", "PragmaticAzureDemo.Tests\PragmaticAzureDemo.Tests.csproj", "{A562ED57-74FA-4B8D-BC4A-1C16C62C4E38}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PragmaticAzureActiveDirectory", "PragmaticAzureActiveDirectory\PragmaticAzureActiveDirectory.csproj", "{81665A42-513F-4697-AC97-25C2EEE785E2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CC2EABB8-63EC-4F31-96B6-0255824E5181}"
@@ -15,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CC2EAB
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PragmaticAzure.Telemetry", "PragmaticAzure.Telemetry\PragmaticAzure.Telemetry.csproj", "{98B83D07-8488-43B9-8445-64361E5A2A38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PragmaticAzure.Telemetry.Tests", "PragmaticAzure.Telemetry.Tests\PragmaticAzure.Telemetry.Tests.csproj", "{8F41F22B-01AB-4913-A7DB-BF2D03BD3825}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,14 +28,18 @@ Global
 		{4FD5C0FA-6B84-4F08-8B95-49C053591BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FD5C0FA-6B84-4F08-8B95-49C053591BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FD5C0FA-6B84-4F08-8B95-49C053591BB9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A562ED57-74FA-4B8D-BC4A-1C16C62C4E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A562ED57-74FA-4B8D-BC4A-1C16C62C4E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A562ED57-74FA-4B8D-BC4A-1C16C62C4E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A562ED57-74FA-4B8D-BC4A-1C16C62C4E38}.Release|Any CPU.Build.0 = Release|Any CPU
 		{81665A42-513F-4697-AC97-25C2EEE785E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{81665A42-513F-4697-AC97-25C2EEE785E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81665A42-513F-4697-AC97-25C2EEE785E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81665A42-513F-4697-AC97-25C2EEE785E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98B83D07-8488-43B9-8445-64361E5A2A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B83D07-8488-43B9-8445-64361E5A2A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B83D07-8488-43B9-8445-64361E5A2A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B83D07-8488-43B9-8445-64361E5A2A38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F41F22B-01AB-4913-A7DB-BF2D03BD3825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F41F22B-01AB-4913-A7DB-BF2D03BD3825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F41F22B-01AB-4913-A7DB-BF2D03BD3825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F41F22B-01AB-4913-A7DB-BF2D03BD3825}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
